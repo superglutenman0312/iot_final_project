@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "b3c70921-a377-4792-a70a-be96f9f74452",
+		"name": "Final Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create ae",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-M2M-Origin",
+						"value": "admin:admin",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml;ty=2",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<om2m:ae xmlns:om2m=\"http://www.onem2m.org/xml/protocols\" rn=\"Lamp\">\n    <api>Lamp</api>\n    <lbl>Location/home</lbl>\n    <poa>http://127.0.0.1:1880/Lamp</poa>\n    <rr>True</rr>\n</om2m:ae>\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/~/in-cse",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"~",
+						"in-cse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create cnt_DATA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-M2M-Origin",
+						"value": "admin:admin",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml;ty=3",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<om2m:cnt xmlns:om2m=\"http://www.onem2m.org/xml/protocols\" rn=\"DATA\">\n</om2m:cnt>"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/~/in-cse/in-name/Lamp",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"~",
+						"in-cse",
+						"in-name",
+						"Lamp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SUB_DATA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-M2M-Origin",
+						"value": "admin:admin",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml;ty=23",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<om2m:sub xmlns:om2m=\"http://www.onem2m.org/xml/protocols\" rn=\"SUBSCRIPTION_IN\">\n    <nu>http://192.168.76.131:8282/~/in-cse/in-name/Lamp</nu>\n    <nct>2</nct>\n</om2m:sub>"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8282/~/mn-cse/mn-name/Lamp/DATA",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8282",
+					"path": [
+						"~",
+						"mn-cse",
+						"mn-name",
+						"Lamp",
+						"DATA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create cnt_MODE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-M2M-Origin",
+						"value": "admin:admin",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml;ty=3",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<om2m:cnt xmlns:om2m=\"http://www.onem2m.org/xml/protocols\" rn=\"MODE\">\n</om2m:cnt>"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/~/in-cse/in-name/Lamp",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"~",
+						"in-cse",
+						"in-name",
+						"Lamp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SUB_MODE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-M2M-Origin",
+						"value": "admin:admin",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml;ty=23",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<om2m:sub xmlns:om2m=\"http://www.onem2m.org/xml/protocols\" rn=\"SUBSCRIPTION_IN\">\n    <nu>http://192.168.76.131:8282/~/in-cse/in-name/Lamp</nu>\n    <nct>2</nct>\n</om2m:sub>"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8282/~/mn-cse/mn-name/Lamp/MODE",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8282",
+					"path": [
+						"~",
+						"mn-cse",
+						"mn-name",
+						"Lamp",
+						"MODE"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

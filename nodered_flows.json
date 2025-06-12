@@ -1,0 +1,1486 @@
+[
+    {
+        "id": "9b742e9adf9b6b1f",
+        "type": "tab",
+        "label": "Final Project",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "60ca1b9b8e0160c9",
+        "type": "inject",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 360,
+        "y": 160,
+        "wires": [
+            [
+                "ab41159bf748a0ca"
+            ]
+        ]
+    },
+    {
+        "id": "ab41159bf748a0ca",
+        "type": "Application",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "platform": "5da48cc632cd5247",
+        "name1": "42f982a2a60e5212",
+        "pointOfAccess": "",
+        "obixAnnounce": false,
+        "width": 0,
+        "options": [
+            {
+                "label": "location",
+                "value": "home"
+            }
+        ],
+        "cntInstance": "",
+        "x": 550,
+        "y": 160,
+        "wires": [
+            [
+                "f647b7e45991dc78"
+            ]
+        ]
+    },
+    {
+        "id": "f647b7e45991dc78",
+        "type": "debug",
+        "z": "9b742e9adf9b6b1f",
+        "name": "debug 34",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "136c5bdef28422ab",
+        "type": "Container",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "platform": "5da48cc632cd5247",
+        "name1": "42f982a2a60e5212",
+        "viewtype": "DATA",
+        "viewunid1": "",
+        "x": 540,
+        "y": 280,
+        "wires": [
+            [
+                "b1bdd0123bf7613a"
+            ]
+        ]
+    },
+    {
+        "id": "9a4f9e73d7fdf1a6",
+        "type": "inject",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 360,
+        "y": 280,
+        "wires": [
+            [
+                "136c5bdef28422ab"
+            ]
+        ]
+    },
+    {
+        "id": "b1bdd0123bf7613a",
+        "type": "debug",
+        "z": "9b742e9adf9b6b1f",
+        "name": "debug 35",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "0c01be95de27f03e",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8080/~/in-cse/in-name/Lamp",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [],
+        "x": 530,
+        "y": 20,
+        "wires": [
+            [
+                "a5b22602de3ab0cc"
+            ]
+        ]
+    },
+    {
+        "id": "0ac0a3fbe8d21c95",
+        "type": "inject",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 360,
+        "y": 20,
+        "wires": [
+            [
+                "0c01be95de27f03e"
+            ]
+        ]
+    },
+    {
+        "id": "a5b22602de3ab0cc",
+        "type": "debug",
+        "z": "9b742e9adf9b6b1f",
+        "name": "debug 37",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "dbc9bccadcdb9abc",
+        "type": "Container",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "platform": "5da48cc632cd5247",
+        "name1": "42f982a2a60e5212",
+        "viewtype": "autre",
+        "viewunid1": "STATUS",
+        "x": 540,
+        "y": 200,
+        "wires": [
+            [
+                "c3aec823997461d3"
+            ]
+        ]
+    },
+    {
+        "id": "b4026d896625ca35",
+        "type": "inject",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "dbc9bccadcdb9abc"
+            ]
+        ]
+    },
+    {
+        "id": "c3aec823997461d3",
+        "type": "debug",
+        "z": "9b742e9adf9b6b1f",
+        "name": "debug 39",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "cc2965255b853545",
+        "type": "http in",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "url": "update_lamp_status",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 420,
+        "wires": [
+            [
+                "49e2e2f913178f60",
+                "48be00a173c5ea23"
+            ]
+        ]
+    },
+    {
+        "id": "49e2e2f913178f60",
+        "type": "function",
+        "z": "9b742e9adf9b6b1f",
+        "name": "取出狀態",
+        "func": "var statusValue = msg.payload[\"status\"];\n\n// 組成 <obj><str name=\"...\" val=\"...\"/></obj> 格式，並做 escape\nvar xmlBody = `\n<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\n  <cnf>application/xml</cnf>\n  <con>\n    &lt;obj&gt;\n      &lt;str name=\"status\" val=\"${statusValue}\"/&gt;\n    &lt;/obj&gt;\n  </con>\n</m2m:cin>\n`;\n\n// 設定 HTTP Request 的參數\nmsg.headers = {\n  \"X-M2M-Origin\": \"admin:admin\",\n  \"Content-Type\": \"application/xml;ty=4\",\n  \"Accept\": \"application/json\"\n};\nmsg.payload = xmlBody;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 420,
+        "wires": [
+            [
+                "4f0aa05e301f031f"
+            ]
+        ]
+    },
+    {
+        "id": "4f0aa05e301f031f",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/Lamp/STATUS",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 420,
+        "wires": [
+            [
+                "a7a78fdb23e9855f"
+            ]
+        ]
+    },
+    {
+        "id": "7f93e11fe4b4ad85",
+        "type": "http in",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "url": "recieve_light_data",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 620,
+        "wires": [
+            [
+                "983ccb48d2a0d102"
+            ]
+        ]
+    },
+    {
+        "id": "983ccb48d2a0d102",
+        "type": "function",
+        "z": "9b742e9adf9b6b1f",
+        "name": "取出狀態",
+        "func": "var light_value = msg.payload[\"light\"];\n\n// 組成 <obj><str name=\"...\" val=\"...\"/></obj> 格式\nvar xmlBody = `\n<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\n  <cnf>application/xml</cnf>\n  <con>\n    &lt;obj&gt;\n      &lt;str name=\"light\" val=\"${light_value}\"/&gt;\n    &lt;/obj&gt;\n  </con>\n</m2m:cin>\n`;\n\n// 設定 HTTP Request 的參數\nmsg.headers = {\n  \"X-M2M-Origin\": \"admin:admin\",\n  \"Content-Type\": \"application/xml;ty=4\",\n  \"Accept\": \"application/json\"\n};\nmsg.payload = xmlBody;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 620,
+        "wires": [
+            [
+                "eacd07a2e1f80197"
+            ]
+        ]
+    },
+    {
+        "id": "eacd07a2e1f80197",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/Lamp/DATA",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 620,
+        "wires": [
+            [
+                "4d193faccd5e801d"
+            ]
+        ]
+    },
+    {
+        "id": "a7a78fdb23e9855f",
+        "type": "http response",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 810,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4d193faccd5e801d",
+        "type": "http response",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 810,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "bd000e666dfec513",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/Lamp",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [],
+        "x": 530,
+        "y": 60,
+        "wires": [
+            [
+                "0ee7979d0b869544"
+            ]
+        ]
+    },
+    {
+        "id": "789600499c717d4b",
+        "type": "inject",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 360,
+        "y": 60,
+        "wires": [
+            [
+                "bd000e666dfec513"
+            ]
+        ]
+    },
+    {
+        "id": "0ee7979d0b869544",
+        "type": "debug",
+        "z": "9b742e9adf9b6b1f",
+        "name": "debug 47",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "6ff0f8f6f9a7aa33",
+        "type": "inject",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 360,
+        "y": 320,
+        "wires": [
+            [
+                "a9d736744b1050cb"
+            ]
+        ]
+    },
+    {
+        "id": "deb78ec47593116f",
+        "type": "debug",
+        "z": "9b742e9adf9b6b1f",
+        "name": "debug 48",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "a9d736744b1050cb",
+        "type": "ContentInstance",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "platform": "65cd2c51b23f845b",
+        "name1": "42f982a2a60e5212",
+        "container": "DATA",
+        "width": 0,
+        "options": [
+            {
+                "type": "string",
+                "label": "light",
+                "value": "45"
+            }
+        ],
+        "x": 540,
+        "y": 320,
+        "wires": [
+            [
+                "deb78ec47593116f"
+            ]
+        ]
+    },
+    {
+        "id": "650ecd49a28561a5",
+        "type": "http in",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "url": "Lamp",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 940,
+        "wires": [
+            [
+                "8ed320ef2fa9b26e"
+            ]
+        ]
+    },
+    {
+        "id": "634c730ff5d3531c",
+        "type": "function",
+        "z": "9b742e9adf9b6b1f",
+        "name": "function 7",
+        "func": "var data = msg.payload[\"m2m:sgn\"].nev[0].rep[0][\"m2m:cin\"][0].con[0]\nmsg.payload = data\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 940,
+        "wires": [
+            [
+                "56d5fcb548e3afa2"
+            ]
+        ]
+    },
+    {
+        "id": "8ed320ef2fa9b26e",
+        "type": "xml",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 370,
+        "y": 940,
+        "wires": [
+            [
+                "634c730ff5d3531c"
+            ]
+        ]
+    },
+    {
+        "id": "bf50408a65df790b",
+        "type": "function",
+        "z": "9b742e9adf9b6b1f",
+        "name": "function 8",
+        "func": "var New = {};\nNew.light = msg.payload.obj.str[0].$.val;\nmsg.payload = New;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 920,
+        "wires": [
+            [
+                "eb2515857d6b04c8"
+            ]
+        ]
+    },
+    {
+        "id": "eb2515857d6b04c8",
+        "type": "function",
+        "z": "9b742e9adf9b6b1f",
+        "name": "set payload and headers",
+        "func": "/*jshint multistr: true */\nvar data = '<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\\\n\t<cnf>message</cnf>\\\n\t<con>\\\n\t  &lt;obj&gt;\\\n\t\t&lt;str name=&quot;light&quot; val=&quot;'+ msg.payload.light + '&quot;/&gt;\\\n\t  &lt;/obj&gt;\\\n\t</con>\\\n</m2m:cin>';\n\nmsg.payload = data;\nmsg.headers = {};\nmsg.headers['X-M2M-Origin'] = 'admin:admin';\nmsg.headers['Content-Type'] = 'application/xml;ty=4';\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 920,
+        "wires": [
+            [
+                "335f944847babd08"
+            ]
+        ]
+    },
+    {
+        "id": "56d5fcb548e3afa2",
+        "type": "xml",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 670,
+        "y": 940,
+        "wires": [
+            [
+                "302bc8e8469575cf"
+            ]
+        ]
+    },
+    {
+        "id": "335f944847babd08",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8080/~/in-cse/in-name/Lamp/DATA",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1510,
+        "y": 920,
+        "wires": [
+            [
+                "0453816377a581e0"
+            ]
+        ]
+    },
+    {
+        "id": "0453816377a581e0",
+        "type": "http response",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1710,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "542284f7212a9a2a",
+        "type": "Container",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "platform": "5da48cc632cd5247",
+        "name1": "42f982a2a60e5212",
+        "viewtype": "autre",
+        "viewunid1": "MODE",
+        "x": 540,
+        "y": 240,
+        "wires": [
+            [
+                "e36851f1cf065161"
+            ]
+        ]
+    },
+    {
+        "id": "3f9c9fae7d1679bc",
+        "type": "inject",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "542284f7212a9a2a"
+            ]
+        ]
+    },
+    {
+        "id": "e36851f1cf065161",
+        "type": "debug",
+        "z": "9b742e9adf9b6b1f",
+        "name": "debug 49",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "bec46fbd05f59e64",
+        "type": "http in",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "url": "update_lamp_mode",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 580,
+        "wires": [
+            [
+                "51f1d489e0737d4c"
+            ]
+        ]
+    },
+    {
+        "id": "51f1d489e0737d4c",
+        "type": "function",
+        "z": "9b742e9adf9b6b1f",
+        "name": "取出狀態",
+        "func": "var modeValue = msg.payload[\"mode\"];\n\n// 組成 <obj><str name=\"...\" val=\"...\"/></obj> 格式，並做 escape\nvar xmlBody = `\n<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\n  <cnf>application/xml</cnf>\n  <con>\n    &lt;obj&gt;\n      &lt;str name=\"mode\" val=\"${modeValue}\"/&gt;\n    &lt;/obj&gt;\n  </con>\n</m2m:cin>\n`;\n\n// 設定 HTTP Request 的參數\nmsg.headers = {\n  \"X-M2M-Origin\": \"admin:admin\",\n  \"Content-Type\": \"application/xml;ty=4\",\n  \"Accept\": \"application/json\"\n};\nmsg.payload = xmlBody;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 580,
+        "wires": [
+            [
+                "d82beb3c8b077d13"
+            ]
+        ]
+    },
+    {
+        "id": "d82beb3c8b077d13",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/Lamp/MODE",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 580,
+        "wires": [
+            [
+                "2f71da7702250c3b"
+            ]
+        ]
+    },
+    {
+        "id": "2f71da7702250c3b",
+        "type": "http response",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 810,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "302bc8e8469575cf",
+        "type": "switch",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "property": "payload.obj.str[0].$.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "light",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "mode",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 830,
+        "y": 940,
+        "wires": [
+            [
+                "bf50408a65df790b",
+                "b60d97785ebbe79d"
+            ],
+            [
+                "bc92d522c5e2e6bc"
+            ]
+        ]
+    },
+    {
+        "id": "bc92d522c5e2e6bc",
+        "type": "function",
+        "z": "9b742e9adf9b6b1f",
+        "name": "function 10",
+        "func": "var New = {};\nNew.mode = msg.payload.obj.str[0].$.val;\nmsg.payload = New;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 1080,
+        "wires": [
+            [
+                "efa682c8755b972b"
+            ]
+        ]
+    },
+    {
+        "id": "efa682c8755b972b",
+        "type": "function",
+        "z": "9b742e9adf9b6b1f",
+        "name": "set payload and headers",
+        "func": "/*jshint multistr: true */\nvar data = '<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\\\n\t<cnf>message</cnf>\\\n\t<con>\\\n\t  &lt;obj&gt;\\\n\t\t&lt;str name=&quot;mode&quot; val=&quot;'+ msg.payload.mode + '&quot;/&gt;\\\n\t  &lt;/obj&gt;\\\n\t</con>\\\n</m2m:cin>';\n\nmsg.payload = data;\nmsg.headers = {};\nmsg.headers['X-M2M-Origin'] = 'admin:admin';\nmsg.headers['Content-Type'] = 'application/xml;ty=4';\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 1080,
+        "wires": [
+            [
+                "43d39c3531441a01"
+            ]
+        ]
+    },
+    {
+        "id": "43d39c3531441a01",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8080/~/in-cse/in-name/Lamp/MODE",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1490,
+        "y": 1080,
+        "wires": [
+            [
+                "2726a40656b31275"
+            ]
+        ]
+    },
+    {
+        "id": "2726a40656b31275",
+        "type": "http response",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1670,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "238530b111bb2e9c",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1250,
+        "y": 1000,
+        "wires": [
+            [
+                "067288f2f63ae950"
+            ]
+        ]
+    },
+    {
+        "id": "067288f2f63ae950",
+        "type": "function",
+        "z": "9b742e9adf9b6b1f",
+        "name": "Judge Light + Mode",
+        "func": "// 1. 拿到 Lamp/MODE/la\nvar mode_cin = msg.payload[\"m2m:cin\"];\nvar con_xml = mode_cin.con;\nvar match = con_xml.match(/val=\"(.*?)\"/);\n\nif (match) {\n  var mode = match[1];  // auto or manual\n} else {\n  node.error(\"Mode parsing failed!\");\n  return null;\n}\n\n// light 是之前從光強度 Notification 抓到的\nvar light = msg.light;\n\nnode.warn(\"Light: \" + light + \", Mode: \" + mode);\n\n// 2. 先判斷 \"想要的狀態\"\nvar target_status = null;\n\nif (mode === \"auto\" && light < 50) {\n  target_status = \"on\"; // 光太暗，想要開燈\n} else if (mode === \"auto\" && light >= 50) {\n  target_status = \"off\"; // 光太亮，想要關燈\n} else {\n  // manual mode，不動作\n  return null;\n}\n\n// 3. 準備 GET Lamp/STATUS/la\nmsg.method = \"GET\";\nmsg.url = \"http://127.0.0.1:8282/~/mn-cse/mn-name/Lamp/STATUS/la\";\n\nmsg.headers = {\n  \"X-M2M-Origin\": \"admin:admin\",\n  \"Accept\": \"application/json\"\n};\n\n// 把 target_status 暫存到 msg，等一下後面流程用\nmsg.target_status = target_status;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1450,
+        "y": 1000,
+        "wires": [
+            [
+                "75f8b9a5a73636e2"
+            ]
+        ]
+    },
+    {
+        "id": "2ca631ce82f9dae7",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "Update Lamp STATUS",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2100,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b60d97785ebbe79d",
+        "type": "function",
+        "z": "9b742e9adf9b6b1f",
+        "name": "Extract Light Value",
+        "func": "// 取得光強度值\nvar light = msg.payload.obj.str[0].$.val;\nmsg.light = light;\n\n// 準備 GET Lamp/MODE/la 的 Request\nmsg.method = \"GET\";\nmsg.url = \"http://127.0.0.1:8282/~/mn-cse/mn-name/Lamp/MODE/la\";\nmsg.headers = {\n    \"X-M2M-Origin\": \"admin:admin\",\n    \"Accept\": \"application/json\"\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 1000,
+        "wires": [
+            [
+                "238530b111bb2e9c"
+            ]
+        ]
+    },
+    {
+        "id": "75f8b9a5a73636e2",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1650,
+        "y": 1000,
+        "wires": [
+            [
+                "d68e66c3af57a975"
+            ]
+        ]
+    },
+    {
+        "id": "d68e66c3af57a975",
+        "type": "function",
+        "z": "9b742e9adf9b6b1f",
+        "name": "Update Status",
+        "func": "// 直接用 msg.payload\nvar status_cin = msg.payload[\"m2m:cin\"];\nvar con_xml = status_cin.con;\nvar match = con_xml.match(/val=\"(.*?)\"/);\n\nif (match) {\n  var current_status = match[1]; // on / off\n} else {\n  node.error(\"Status parsing failed!\");\n  return null;\n}\n\nnode.warn(\"Current Status: \" + current_status + \", Target Status: \" + msg.target_status);\n\n// 比對現有狀態 vs 要設定的狀態\nif (current_status === msg.target_status) {\n  // 狀態一樣，不用更新\n  node.warn(\"Status already correct, no update needed.\");\n  return null;\n} else {\n  // 狀態不一樣，要更新 Lamp/STATUS\n  msg.method = \"POST\";\n  msg.url = \"http://127.0.0.1:8282/~/mn-cse/mn-name/Lamp/STATUS\";\n\n  msg.headers = {\n    \"X-M2M-Origin\": \"admin:admin\",\n    \"Content-Type\": \"application/xml;ty=4\",\n    \"Accept\": \"application/json\"\n  };\n\n  // 組合 POST payload\n  msg.payload = `\n<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\n  <cnf>application/xml</cnf>\n  <con>\n    &lt;obj&gt;\n      &lt;str name=\"status\" val=\"${msg.target_status}\"/&gt;\n    &lt;/obj&gt;\n  </con>\n</m2m:cin>`;\n\n  return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1840,
+        "y": 1000,
+        "wires": [
+            [
+                "2ca631ce82f9dae7",
+                "6cdfe0e2a4983ac3"
+            ]
+        ]
+    },
+    {
+        "id": "2a026bee34381d34",
+        "type": "inject",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 760,
+        "wires": [
+            [
+                "d85f981708b3b430"
+            ]
+        ]
+    },
+    {
+        "id": "d85f981708b3b430",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/LAMP_0?op=setOn&lampid=LAMP_0",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "X-M2M-Origin",
+                "valueType": "other",
+                "valueValue": "admin:admin"
+            },
+            {
+                "keyType": "other",
+                "keyValue": "Accept",
+                "valueType": "other",
+                "valueValue": "application/xml"
+            }
+        ],
+        "x": 410,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8602556571efe2e3",
+        "type": "inject",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 840,
+        "wires": [
+            [
+                "4b4df7316caef41e"
+            ]
+        ]
+    },
+    {
+        "id": "4b4df7316caef41e",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/LAMP_0?op=setOff&lampid=LAMP_0",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [],
+        "x": 410,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48be00a173c5ea23",
+        "type": "switch",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "property": "payload[\"status\"]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 500,
+        "wires": [
+            [
+                "08dfca411f9d20d5"
+            ],
+            [
+                "e030ead8e92bdc7d"
+            ]
+        ]
+    },
+    {
+        "id": "08dfca411f9d20d5",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/LAMP_0?op=setOn&lampid=LAMP_0",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "X-M2M-Origin",
+                "valueType": "other",
+                "valueValue": "admin:admin"
+            },
+            {
+                "keyType": "other",
+                "keyValue": "Accept",
+                "valueType": "other",
+                "valueValue": "application/xml"
+            }
+        ],
+        "x": 590,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e030ead8e92bdc7d",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/LAMP_0?op=setOff&lampid=LAMP_0",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6cdfe0e2a4983ac3",
+        "type": "switch",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "property": "target_status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2050,
+        "y": 1060,
+        "wires": [
+            [
+                "f80c1ae82149acd3"
+            ],
+            [
+                "cd5b7997f4d71a34"
+            ]
+        ]
+    },
+    {
+        "id": "f222e3d0d18491ad",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2410,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a7533cf6dbb71f5",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2410,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f80c1ae82149acd3",
+        "type": "function",
+        "z": "9b742e9adf9b6b1f",
+        "name": "Update Status",
+        "func": "// 這裡寫你的 URL\nmsg.url = \"http://127.0.0.1:8282/~/mn-cse/mn-name/LAMP_0?op=setOn&lampid=LAMP_0\";\n\n// 設定 HTTP Method\nmsg.method = \"POST\";\n\n// 如果 payload 不用，可以直接清空\nmsg.payload = \"\";\n\n// Headers 是 HTTP request node 另外設定的，不用寫在這\nmsg.headers = {\n    \"X-M2M-Origin\": \"admin:admin\",\n    \"Accept\": \"application/json\"\n};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2220,
+        "y": 1040,
+        "wires": [
+            [
+                "f222e3d0d18491ad"
+            ]
+        ]
+    },
+    {
+        "id": "cd5b7997f4d71a34",
+        "type": "function",
+        "z": "9b742e9adf9b6b1f",
+        "name": "Update Status",
+        "func": "// 這裡寫你的 URL\nmsg.url = \"http://127.0.0.1:8282/~/mn-cse/mn-name/LAMP_0?op=setOff&lampid=LAMP_0\";\n\n// 設定 HTTP Method\nmsg.method = \"POST\";\n\n// 如果 payload 不用，可以直接清空\nmsg.payload = \"\";\n\n// Headers 是 HTTP request node 另外設定的，不用寫在這\nmsg.headers = {\n    \"X-M2M-Origin\": \"admin:admin\",\n    \"Accept\": \"application/json\"\n};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2220,
+        "y": 1100,
+        "wires": [
+            [
+                "5a7533cf6dbb71f5"
+            ]
+        ]
+    },
+    {
+        "id": "fb75f57667ea1441",
+        "type": "inject",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 700,
+        "wires": [
+            [
+                "fbb778e763cece67"
+            ]
+        ]
+    },
+    {
+        "id": "fbb778e763cece67",
+        "type": "http request",
+        "z": "9b742e9adf9b6b1f",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/Lamp/DATA/la",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "X-M2M-Origin",
+                "valueType": "other",
+                "valueValue": "admin:admin"
+            },
+            {
+                "keyType": "other",
+                "keyValue": "Accept",
+                "valueType": "other",
+                "valueValue": "application/xml"
+            }
+        ],
+        "x": 410,
+        "y": 700,
+        "wires": [
+            [
+                "b0a39d19af51d80e"
+            ]
+        ]
+    },
+    {
+        "id": "b0a39d19af51d80e",
+        "type": "debug",
+        "z": "9b742e9adf9b6b1f",
+        "name": "debug 50",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "5da48cc632cd5247",
+        "type": "xN_CSE",
+        "platform": "mn-cse",
+        "URLBase": "http://127.0.0.1:8282/~/mn-cse/mn-name",
+        "user": "admin",
+        "password": "admin"
+    },
+    {
+        "id": "42f982a2a60e5212",
+        "type": "AE",
+        "appId": "Lamp"
+    },
+    {
+        "id": "65cd2c51b23f845b",
+        "type": "xN_CSE",
+        "platform": "mn-cse",
+        "URLBase": "http://127.0.0.1:8282/~/mn-cse/mn-name",
+        "user": "admin",
+        "password": "admin"
+    }
+]
