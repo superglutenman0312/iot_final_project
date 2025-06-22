@@ -29,8 +29,14 @@ sh start.sh
 cd ~/Documents/org.eclipse.om2m/org.eclipse.om2m.site.mn-cse/target/products/mn-cse/linux/gtk/x86_64/
 sh start.sh
 ```
-2. 開啟 node-red，接著連上127.0.0.1:1880(nodered網址)，把除了最上面兩個 timestamp 以外的所有 timestamp 都值執行一次，以建立 mn 的 container。
-3. 開啟 Postman，把所有 function 執行一次，以建立 in 的 container，並建立訂閱機制。
+2. 開啟 node-red，接著連上127.0.0.1:1880(nodered網址)，接著 import nodered_flows.json，並把除了最上面兩個 timestamp 以外的所有 timestamp 都值執行一次，以建立 mn 的 container。
+3. 開啟 Postman，接著 import postman_flows.json，把所有 function 執行一次，以建立 in 的 container，並建立訂閱機制。
 4. 在 mn 的 terminal 中，輸入`start 41`，來開啟燈泡 IPE。
-5. 準備工作皆完成，此時可以在 Android 系統中開啟 Final_Project APP，以手動模式控制燈泡 IPE。
-6. 可執行 python 腳本"light_simulate.py"，來模擬生產光強度資料，並將 APP 的控制模式調整 Auto mode，就會看到燈泡根據模擬的光強度資料自動 on, off。
+5. 至此，準備工作皆完成，此時可以在 Android 系統(或 Android虛擬機)中開啟 Final_Project APP，以手動模式(manuel mode)控制燈泡 IPE。
+6. 可執行 python 腳本"light_simulate.py"，來模擬生產光強度資料，並將 APP 的控制模式調整 auto mode，就會看到燈泡根據模擬的光強度資料自動 on, off。
+
+## Author
+Developed by Wang Yu-Cheng
+
+## License
+This project is provided for academic and educational use only. You may extend or modify it freely.
